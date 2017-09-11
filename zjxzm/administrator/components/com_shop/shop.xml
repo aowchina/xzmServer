@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.4" method="upgrade">
+	<name>com_shop</name>
+	<author>zhang qin</author>
+	<creationDate>2017-5-22</creationDate>
+	<copyright>(C) 2016 Min-Fo. All rights reserved.</copyright>
+	<license></license>
+	<authorEmail>1402494823@qq.com</authorEmail>
+	<authorUrl>www.min-fo.com</authorUrl>
+	<version>1.0.0</version>
+	<description>COM_shop_XML_DESCRIPTION</description>
+
+	<administration>
+		<menu img="class:categories">COM_SHOP_MENU</menu>
+
+		<files folder="admin">
+			<filename>shop.php</filename>
+			<filename>index.html</filename>
+		    <filename>access.xml</filename>
+		    <filename>config.xml</filename>
+		    <filename>controller.php</filename>
+		    <folder>controllers</folder>
+		    <folder>helpers</folder>
+		    <folder>models</folder>
+		    <folder>tables</folder>
+		    <folder>views</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="zh-CN">language/zh-CN.com_shop.ini</language>
+			<language tag="zh-CN">language/zh-CN.com_shop.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

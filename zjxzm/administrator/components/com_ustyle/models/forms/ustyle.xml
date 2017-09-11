@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="my_fields" enctype="multipart/form-data">
+    	
+
+        <field name="carid" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL" readonly="true" class="readonly" description="JGLOBAL_FIELD_ID_DESC"/>
+
+        <field name="serialid" type="sql" default="0" label="车款所属车系" query="SELECT serialid AS value, sname AS serialid FROM #__serial" required="true"/>
+
+
+      <field name="cname" type="text" class="inputbox" size="40" label="车款名称" description="" required="true" hint="不可重复"/>
+
+        <field name="vin" type="text" class="inputbox" size="40" label="车架号" description="" required="true" hint="不可重复"/>
+
+
+        <field name="cimage" type="media" directory="" hide_none="1" label="车款图片" size="40" description="" required="true" />
+
+     <field name="price" type="text" class="inputbox" size="40" label="参考价" description="" required="true" />
+
+     <field name="issuedate" type="text" class="inputbox" size="40" label="年份" description="" required="true" hint="不可重复"/>
+
+
+    	
+    </fieldset>
+</form>

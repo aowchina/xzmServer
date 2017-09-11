@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.4" method="upgrade">
+	<name>com_bill</name>
+	<author>裴伟建</author>
+	<creationDate>2017-05-31</creationDate>
+	<copyright>(C) 2017 Min-Fo. All rights reserved.</copyright>
+	<license></license>
+	<authorEmail>337516442@qq.com</authorEmail>
+	<authorUrl>www.minfo.com</authorUrl>
+	<version>1.0.0</version>
+	<description>COM_BILL_XML_DESCRIPTION</description>
+
+	<administration>
+		<menu img="class:zp">COM_BILL_MENU</menu>
+		<files folder="admin">
+			<filename>bill.php</filename>
+			<filename>index.html</filename>
+		    <filename>access.xml</filename>
+		    <filename>config.xml</filename>
+		    <filename>controller.php</filename>
+		    <folder>controllers</folder>
+		    <folder>helpers</folder>
+		    <folder>models</folder>
+		    <folder>tables</folder>
+		    <folder>views</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="zh-CN">language/zh-CN.com_bill.ini</language>
+			<language tag="zh-CN">language/zh-CN.com_bill.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

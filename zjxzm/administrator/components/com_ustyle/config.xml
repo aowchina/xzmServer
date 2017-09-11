@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config component='com_ustyle'>
+	<fieldset name="component" label="人物形象" description="人物形象的组件"></fieldset>
+
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+		<field name="rules" type="rules" component="com_ustyles" filter="rules" validate="rules" label="JCONFIG_PERMISSIONS_LABEL" section="component"/>
+	</fieldset>
+</config>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="my_fields">
+        <field name="shopid" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL" readonly="true" class="readonly" description="JGLOBAL_FIELD_ID_DESC"/>
+
+        <field name="tel" type="text" size="40" label="电话" description="" class="inputbox" required="true" />
+
+        <field name="shopname" type="text" size="40" label="公司名称" description="" class="inputbox" required="true" />
+
+         <field name="picture" type="media" directory="" hide_none="1" label="图像" size="40" description="" require="true" />
+        <field name="sellerid" type="sql" label="店铺名称" description="" required="true" query="SELECT sellerid AS value, shopname AS sellerid FROM #__seller "/>
+
+        <field name="number" type="text" size="40" label="销量" description="" class="inputbox" required="true"/>
+
+        <field name="rate" type="text" size="40" label="比率" description="" class="inputbox" required="true" />
+
+    </fieldset>
+</form>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="my_fields">
+        <field name="xls" type="file" label="Excel文件" description="" size="20"/>
+    </fieldset>
+</form>

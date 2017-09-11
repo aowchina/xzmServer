@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="my_fields">
+        <field name="serllerid" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL" readonly="true" class="readonly" description="JGLOBAL_FIELD_ID_DESC"/>
+
+        <field name="sname" type="text" class="inputbox" size="40" label="姓名" description="" required="true" hint="唯一" readonly="true"/>
+
+         <field name="major" type="text" class="inputbox" size="40" label="范围" description="" required="true" hint="唯一" readonly="true"/>
+
+          <field name="skill" type="text" class="inputbox" size="40" label="专长" description="" required="true" hint="唯一" readonly="true"/>
+
+         <field name="picture" type="media" directory="" hide_none="1" label="个人图像" size="40" description="" required="true" readonly="true"/>
+
+
+        <field name="type" type="text" class="inputbox" size="40" label="用户类别" description="" readonly="true"/>
+
+        <field name="number" type="text" class="inputbox" size="40" label="身份证号" description="" readonly="true"/>
+
+        <!--省-->
+        <field name="pid" type="sql" label="省份" description="" required="true" query="SELECT id AS value, areaname AS pid FROM #__area where parentid = 0"/>
+
+        <!--市-->
+        <field name="cid" type="sql" label="城市" description="" query="SELECT id as value,areaname as cid from #__area where level=2" />
+
+        <!--区-->
+        <field name="qid" type="sql" label="区/县" description="" query="SELECT id as value,areaname as qid FROM #__area where level=3"/>
+
+        <!--市-->
+<!--         <field name="cid" type="sql" label="城市" description="" query="SELECT id AS value, areaname AS cid FROM #__area where parentid in (SELECT id FROM #__area where parentid = 0)" readonly="true"/> -->
+
+        <!--区-->
+<!--         <field name="qid" type="sql" label="区/县" description="" query="SELECT id as value,areaname as qid from #__area where parentid in (SELECT id FROM #__area where parentid in (SELECT id FROM #__area where parentid = 0))" readonly="true"/> -->
+
+        <field name="address" type="text" class="inputbox" size="40" label="详细地址" description="" readonly="true"/>
+
+        <field name="cardfront" type="media" directory="" hide_none="1" label="身份证正面" size="40" description="" required="true" readonly="true"/>
+
+        <field name="cardback" type="media" directory="" hide_none="1" label="身份证背面" size="40" description="" required="true" readonly="true"/>
+
+        <field name="cardhand" type="media" directory="" hide_none="1" label="手持身份证" size="40" description="" required="true" readonly="true"/>
+
+        <field name="license" type="media" directory="" hide_none="1" label="营业执照" size="40" description="" required="true" readonly="true"/>
+
+    </fieldset>
+</form>

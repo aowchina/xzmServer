@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset name="my_fields" enctype="multipart/form-data">
+      <field name="goodid" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL" readonly="true" class="readonly" description="JGLOBAL_FIELD_ID_DESC"/>
+
+
+      <field name="name" type="text" class="inputbox" size="40" label="商品名称" description="" required="true" readonly="true"/>
+
+        <field name="oem" type="text" class="inputbox" size="40" label="OEM号" description="" required="true" readonly="true"/>
+
+       <field name="price" type="text" class="inputbox" size="40" label="销售价格" description="" required="true" readonly="true" />
+
+            <!-- <field name="xuanz" type="text" class="inputbox" size="40" label="选装" description="" required="true" />
+
+            <field name="area" type="text" class="inputbox" size="40" label="产地" description="" required="true" />
+
+            <field name="original" type="text" class="inputbox" size="40" label="原厂" description="" required="true" /> -->
+
+            
+
+        <field name="epcid" type="sql" default="0" label="所属EPC图" query="SELECT epcid AS value, epcname AS epcid FROM #__epc" readonly="true"/>
+
+         <field name="carid" type="sql" default="0" label="适用车款" query="SELECT carid AS value, cname AS carid FROM #__car" readonly="true"/>
+
+          <field name="typeid" type="sql" default="0" label="所属商品类别" query="SELECT typeid AS value, tname AS typeid FROM #__type" readonly="true"/>
+          <field name="note" type="text" class="inputbox" size="40" label="备注" description="" readonly="true" />
+
+  </fieldset>
+
+    <!--<fieldset name="my_list" enctype="multipart/form-data">-->
+        <!--<field name="img" type="media" directory="" hide_none="1" label="商品图片" size="40" description="" required="true" />-->
+    <!--</fieldset>-->
+
+</form>

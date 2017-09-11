@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="my_fields">
+    	<field name="id" type="text" default="0" label="ID" readonly="true" class="readonly" description=""/>
+
+    	<field name="img" type="media"  class="inputbox"  size="40" label="广告图片" description="" required="true" />
+
+		<field name="gid" type="sql" label="关联商品" description="" query="select goodid AS value, name AS gid FROM #__good where state=1 and is_sj=1" />
+    </fieldset>
+</form>

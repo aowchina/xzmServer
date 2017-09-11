@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="my_fields">
+    	<field name="id" type="text" default="0" label="ID" readonly="true" class="readonly" description=""/>
+
+		<field name="typeid" type="sql" default="0" label="配件类别所属商品分类"  required="true" query="select typeid as value,tname as typeid from #__type "/>
+
+		<!--<field name="tpid" type="list" default="" label="二级分类"  />-->
+
+		<field name="name" type="text" default="" label="类别名称" size="40" required="true" />
+    </fieldset>
+</form>

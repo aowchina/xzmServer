@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.4" method="upgrade">
+	<name>com_service</name>
+	<author>zhangqin</author>
+	<creationDate>2017-2-13</creationDate>
+	<copyright>(C) 2016 Min-Fo. All rights reserved.</copyright>
+	<license></license>
+	<authorEmail>1402494823@qq.com</authorEmail>
+	<authorUrl>www.minfo.com</authorUrl>
+	<version>1.0.0</version>
+	<description>COM_SERVICE_XML_DESCRIPTION</description>
+
+	<administration>
+		<menu img="class:zp">COM_SERVICE_MENU</menu>
+		<submenu>
+			<menu link="option=com_service" view="services" img="class:generic" alt="Service/Services">COM_SERVICE_SERVICE</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>ustyle.php</filename>
+			<filename>index.html</filename>
+		    <filename>access.xml</filename>
+		    <filename>config.xml</filename>
+		    <filename>controller.php</filename>
+		    <folder>controllers</folder>
+		    <folder>helpers</folder>
+		    <folder>models</folder>
+		    <folder>tables</folder>
+		    <folder>views</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="zh-CN">language/zh-CN.com_service.ini</language>
+			<language tag="zh-CN">language/zh-CN.com_service.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

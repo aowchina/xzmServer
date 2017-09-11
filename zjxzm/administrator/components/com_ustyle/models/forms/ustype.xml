@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="my_fields">
+    	<!-- <field name="ustid" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL" readonly="true" class="readonly" description="JGLOBAL_FIELD_ID_DESC"/>
+
+    	<field name="ustname" type="text" class="inputbox" size="40" label="人物形象类别" description="" required="true" /> -->
+
+    	<!-- <field name="ustintime" type="calendar" class="inputbox" size="40" label="日期" description="" format="%Y-%m-%d" hint="格式如：2016-01-01" required="true"/> -->
+      <field name="serialid" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL" readonly="true" class="readonly" description="JGLOBAL_FIELD_ID_DESC"/>
+
+      <field name="brandid" type="sql" default="0" label="车系所属品牌" query="SELECT brandid AS value, bname AS brandid FROM #__brand" required="true"/>
+
+
+      <field name="sname" type="text" class="inputbox" size="40" label="车系名称" description="" required="true" hint="不可重复"/>
+
+     <field name="simage" type="media" directory="" hide_none="1" label="车系图片" size="40" description="" required="true" />
+    	
+    </fieldset>
+</form>

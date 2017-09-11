@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="my_fields">
+		<field name="id" type="text" default="0" label="ID" readonly="true" class="readonly" description=""/>
+
+		<field name="type" type="radio" class="btn-group" size="40" label="类别" description="" required="true" >
+			<option value="1">帮助中心</option>
+			<option value="2">法律中心</option>
+			<option value="3">关于我们</option>
+		</field>
+		<!--<field name="num" type="input"  class="inputbox"  size="40" label="版本号" description="" />-->
+
+		<field name="name" type="text"  class="inputbox"  size="40" label="标题" description="" hint="此字段为选择帮助中心时填写"/>
+		<field name="url" type="editor"  class="inputbox"  size="40" label="内容" description="" required="true" />
+
+
+	</fieldset>
+</form>

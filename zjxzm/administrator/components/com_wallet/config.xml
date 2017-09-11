@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config component='com_wallet'>
+	<fieldset name="component" label="钱包" description="钱包管理组件特殊配置（暂无）"></fieldset>
+
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+		<field name="rules" type="rules" component="com_wallet" filter="rules" validate="rules" label="JCONFIG_PERMISSIONS_LABEL" section="component"/>
+	</fieldset>
+</config>

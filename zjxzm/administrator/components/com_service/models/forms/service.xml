@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="my_fields">
+    	<field name="id" type="text" default="0" label="ID" readonly="true" class="readonly" description=""/>
+
+    	<field name="bname" type="text" class="inputbox" size="40" label="公司名称" description="" />
+
+    	<field name="name" type="text" class="inputbox" size="40" label="姓名" description="" />
+
+        <field name="picture" type="media" directory="" hide_none="1" label="图片" size="40" description="" required="true" />
+
+    	<field name="major" type="text" class="inputbox" size="40" label="主营业务" description="" />
+
+    	<field name="tel" type="text" class="inputbox" size="40" label="服务电话" description="" />
+
+    </fieldset>
+</form>

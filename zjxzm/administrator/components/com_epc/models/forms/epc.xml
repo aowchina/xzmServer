@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="my_fields" enctype="multipart/form-data">
+    	<field name="epcid" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL" readonly="true" class="readonly" description="JGLOBAL_FIELD_ID_DESC"/>
+
+    	<field name="epcname" type="text" class="inputbox" size="40" label="EPC名称" description="" required="true" />
+
+
+    	<field name="epctid" type="text" class="inputbox" size="40" label="EPC号" description="" required="true" />
+        
+        <field name="typeid" type="sql" default="0" label="所属商品类别" query="SELECT typeid AS value, tname AS typeid FROM #__type" required="true" />
+
+        	<field name="epcimg" type="media" class="inputbox" size="40" label="EPC图片" description="" required="true" />
+    	
+    </fieldset>
+</form>

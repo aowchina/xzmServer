@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="my_fields">
+    	<field name="id" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL" readonly="true" class="readonly" description="JGLOBAL_FIELD_ID_DESC"/>
+
+        <field name="epcid" type="sql" default="" label="所属EPC结构图"  required="true" query="select epcid as value,epcname as epcid from #__epc "/>
+
+        <field name="oem" type="text" class="inputbox" size="40" label="OEM号" description="" required="true" />
+
+        <field name="name" type="text" default="" label="名称"  size="40" required="true" />
+
+        <field name="price" type="text" class="inputbox" size="40" label="销售价格" description="" required="true" />
+
+        <field name="hprice" type="text" class="inputbox" size="40" label="销售限额" description="" required="true" />
+
+            <field name="danwei" type="text" class="inputbox" size="40" label="单位" description="" required="true" />
+
+        <field name="num" type="text" class="inputbox" size="40" label="单量" description="" required="true" />
+
+        <field name="position" type="text" class="inputbox" size="40" label="位置" description="" required="true" />
+        <field name="syear" type="calendar" class="inputbox" size="40" label="起止年" format="%Y-%m-%d" description="" required="true" />
+
+        <field name="eyear" type="calendar" class="inputbox" size="40" label="终止年" format="%Y-%m-%d" description="" required="true" />
+
+        <field name="xzhuang" type="text" class="inputbox" size="40" label="选装" description="" required="true" />
+
+        <field name="loureplace" type="text" class="inputbox" size="40" label="lou替换级关系" description="" required="true" />
+
+        <field name="lounewjian" type="text" class="inputbox" size="40" label="lou新件号" description="" required="true" />
+
+
+        <field name="note" type="text" class="inputbox" size="40" label="备注" description=""  />
+
+        
+    </fieldset>
+</form>

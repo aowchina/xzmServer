@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config component='com_pcenter'>
+	<fieldset name="component" label="文本管理" description="文本管理的组件"></fieldset>
+
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+		<field name="rules" type="rules" component="com_pcenter" filter="rules" validate="rules" label="JCONFIG_PERMISSIONS_LABEL" section="component"/>
+	</fieldset>
+</config>

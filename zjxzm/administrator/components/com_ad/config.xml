@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config component='com_ad'>
+	<fieldset name="component" label="广告管理" description="广告管理的组件"></fieldset>
+
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+		<field name="rules" type="rules" component="com_ad" filter="rules" validate="rules" label="JCONFIG_PERMISSIONS_LABEL" section="component"/>
+	</fieldset>
+</config>

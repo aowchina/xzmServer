@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="my_fields">
+        <field name="appuid" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL" readonly="true" class="readonly" description="JGLOBAL_FIELD_ID_DESC"/>
+
+        <field name="username" type="text" class="inputbox" size="40" label="姓名" description="" required="true" hint="唯一" />
+
+         <field name="name" type="text" class="inputbox" size="40" label="昵称" description="" required="true"  />
+
+          <field name="bname" type="text" class="inputbox" size="40" label="公司名" description="" required="true"  />
+
+           <field name="tel" type="text" class="inputbox" size="40" label="手机号" description="" required="true" hint="唯一" />
+
+         <field name="picture" type="media" directory="" hide_none="1" label="个人图像" size="40" description="" required="true" />
+
+
+        <field name="type" type="text" class="inputbox" size="40" label="用户类别" description="" />
+
+       
+        <!--<field name="pid" type="sql" label="省份" description="" required="true" query="SELECT id AS value, areaname AS pid FROM #__area where parentid = 0"/>-->
+
+        <!--<field name="cid" type="list" label="城市" description="" />-->
+        <!--<field name="qid" type="list" label="区/县" description="" />-->
+
+        <!--<field name="address" type="text" class="inputbox" size="40" label="详细地址" description="" />-->
+        
+      
+    </fieldset>
+</form>

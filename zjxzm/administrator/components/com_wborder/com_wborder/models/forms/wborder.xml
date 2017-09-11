@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <!--基本信息-->
+	<fieldset name="my_fields">
+        <field name="id" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL" readonly="true" class="readonly" description="JGLOBAL_FIELD_ID_DESC"/>
+
+        <field name="qgorderid" readonly="readonly" type="text"  label="订单编号" description=""  />
+
+        <field name="paytype" type="radio" label="支付方式" description="" class="btn-group" size="1" default="1" filter="intval" >
+            <option value="1">支付宝</option>
+            <option value="2">微信</option>
+            <option value="3">余额支付</option>
+        </field>
+
+
+        <field name="paytime" type="calendar" class="inputbox" size="40" label="支付时间" format="%Y-%m-%d" description="" required="true" />
+
+        <field name="price" type="text"  label="价格" description=""  />
+
+
+         <field name="username" type="text"  label="下单人姓名" description="" /> 
+         <field name="tel" type="text"  label="下单人电话" description="" /> 
+
+        <field name="sname" type="text"  label="收货人姓名" description="" />
+
+        <field name="retime" type="text"  label="收货时间" description="" />
+
+        <field name="pid" type="sql" label="省份" description="" required="true" query="SELECT id AS value, areaname AS pid FROM #__area where parentid = 0"/>
+
+        <field name="cid" type="list" label="城市" description="" />
+        <field name="qid" type="list" label="区/县" description="" />
+        <field name="address" type="text" class="inputbox" size="40" label="详细地址" description="" />
+
+        <field name="status" type="radio" label="状态" description="" class="btn-group" size="1" default="1" filter="intval" >
+            <option value="0">待支付</option>
+            <option value="1">待发货</option>
+            <option value="2">已发货</option>
+            <option value="3">已完成</option>
+            <option value="4">已取消</option>
+        </field>
+
+        <field name="kuaidih" type="text" class="inputbox" size="40" label="快递单号" description="" hint="仅配方式为物流时填写" />
+
+    </fieldset>
+
+    <!--商品信息-->
+    <fieldset name="goods_list">
+        <field name="goodid" type="text"  label="商品标识" description=""  />
+        <field name="shopname" type="text"  label="店铺名称" description="" />
+        <field name="name" type="text"  label="商品名称" description="" />
+        <field name="amount" type="text"  label="类型" description="" />
+        <field name="money" type="text"  label="购买时单价" description="" />
+    </fieldset>
+    
+</form>
+
